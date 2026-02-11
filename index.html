@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pour toi ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#ff4d6d"/>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <main class="phone">
+    <header class="topbar">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>Pour toi</span>
+      </div>
+
+      <button class="music" id="musicBtn" type="button" aria-label="Musique">
+        <span class="icon" aria-hidden="true">♪</span>
+        <span class="label" id="musicLabel">Play</span>
+      </button>
+    </header>
+
+    <audio id="bgAudio" preload="auto" loop>
+      <source src="assets/music.mp3" type="audio/mpeg" />
+      Votre navigateur ne supporte pas l'audio.
+    </audio>
+
+    <section class="card hero" id="top">
+      <div class="hero-media">
+        <img src="assets/hero.jpg" alt="Nous deux" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder')" />
+        <div class="ph">Ajoute une photo<br><span>assets/hero.jpg</span></div>
+        <div class="shine" aria-hidden="true"></div>
+      </div>
+
+      <h1 class="headline">Joyeuse Saint‑Valentin</h1>
+      <p class="sub">J’ai fait ce petit site juste pour toi.</p>
+
+      <div class="chips">
+        <span class="chip">❤️ Toi</span>
+        <span class="chip">✨ Nous</span>
+        <span class="chip">∞ Toujours</span>
+      </div>
+
+      <a class="btn" href="#story">Découvrir</a>
+    </section>
+
+    <section class="card" id="story">
+      <div class="section-title">
+        <h2>Notre moment</h2>
+        <p>Quelques souvenirs, et une lettre.</p>
+      </div>
+
+      <div class="row">
+        <div class="mini">
+          <img src="assets/pic1.jpg" alt="Souvenir 1" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder')" />
+          <div class="ph">assets/pic1.jpg</div>
+        </div>
+        <div class="mini">
+          <img src="assets/pic2.jpg" alt="Souvenir 2" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder')" />
+          <div class="ph">assets/pic2.jpg</div>
+        </div>
+      </div>
+
+      <div class="date">
+        <div class="big">23 · 11 · 2021</div>
+        <div class="small">La ou tout à commencé</div>
+      </div>
+
+      <p class="text">
+        Hier, Aujourd'hui et à Jamais ❤️
+      </p>
+
+      <a class="btn ghost" href="#letter">Lire la lettre</a>
+    </section>
+
+    <section class="card" id="letter">
+      <div class="section-title">
+        <h2>Quelques mots qui viennent du cœur.</h2>
+      </div>
+
+      <div class="paper">
+        <p>
+          Mon amour,<br><br>
+          Je ne sais pas toujours trouver les mots parfaits, mais je sais une chose : quand je pense à toi, je me sens bien. Tu es mon calme, ma joie, mon endroit sûr.
+Merci d’être toi, merci d’être là, merci de m’aimer comme tu le fais.
+          <br><br>
+          Je t’aime. ❤️
+        </p>
+        <p class="sign">— ✨Ton Ahmed✨</p>
+      </div>
+
+      <a class="btn ghost" href="#scratch">Dernière surprise</a>
+    </section>
+
+    <section class="card" id="scratch">
+      <div class="section-title">
+        <h2>Surprise 👇</h2>
+      </div>
+
+      <div class="scratch-grid">
+        <!-- Case 1 -->
+        <div class="scratch-box">
+          <div class="under-one">
+            <img src="assets/reveal1.jpg" alt="Surprise 1" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder')" />
+            <div class="ph">assets/reveal1.jpg</div>
+          </div>
+          <canvas class="scratchCanvas" data-label="1" aria-label="Case à gratter 1"></canvas>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="scratch-box">
+          <div class="under-one">
+            <img src="assets/reveal2.jpg" alt="Surprise 2" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder')" />
+            <div class="ph">assets/reveal2.jpg</div>
+          </div>
+          <canvas class="scratchCanvas" data-label="2" aria-label="Case à gratter 2"></canvas>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="scratch-box">
+          <div class="under-one">
+            <img src="assets/reveal3.jpg" alt="Surprise 3" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder')" />
+            <div class="ph">assets/reveal3.jpg</div>
+          </div>
+          <canvas class="scratchCanvas" data-label="3" aria-label="Case à gratter 3"></canvas>
+        </div>
+      </div>
+        
+        <!-- Case 4 -->
+        <div class="scratch-box">
+          <div class="under-one">
+            <img src="assets/reveal4.jpg" alt="Surprise 4" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder')" />
+            <div class="ph">assets/reveal4.jpg</div>
+          </div>
+          <canvas class="scratchCanvas" data-label="4" aria-label="Case à gratter 4"></canvas>
+        </div>
+      </div>
+
+       <!-- Case 5 -->
+        <div class="scratch-box">
+          <div class="under-one">
+            <img src="assets/reveal5.jpg" alt="Surprise 5" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder')" />
+            <div class="ph">assets/reveal5.jpg</div>
+          </div>
+          <canvas class="scratchCanvas" data-label="5" aria-label="Case à gratter 5"></canvas>
+        </div>
+      </div>
+
+      <a class="btn" href="#top">Revenir au début</a>
+      <p class="footer">Fait avec ❤️</p>
+    </section>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
