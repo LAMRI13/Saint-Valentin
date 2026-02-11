@@ -116,7 +116,7 @@
     canvas.addEventListener('touchend', onUp, { passive:true });
     canvas.addEventListener('touchcancel', onUp, { passive:true });
 
-    window.addEventListener('resize', resize, { passive:true });
+    window.addEventListener('orientationchange', resize, { passive:true });
     resize();
   }
 
